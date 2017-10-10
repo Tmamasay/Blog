@@ -6,7 +6,7 @@
   <link href="/Blog/atom.xml" rel="self"/>
   
   <link href="http://Tmamasay.githup.io/"/>
-  <updated>2017-10-10T08:30:36.892Z</updated>
+  <updated>2017-10-10T08:42:02.668Z</updated>
   <id>http://Tmamasay.githup.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://Tmamasay.githup.io/2017/10/10/Html5/"/>
     <id>http://Tmamasay.githup.io/2017/10/10/Html5/</id>
     <published>2017-10-10T08:17:50.000Z</published>
-    <updated>2017-10-10T08:30:36.892Z</updated>
+    <updated>2017-10-10T08:42:02.668Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="主要变化"><a href="#主要变化" class="headerlink" title="主要变化"></a>主要变化</h1><blockquote><p>增加了一些语义化的标签，其实就是和普通的div一样，只是让一个网页的结构更加的清晰。<br>增加了音乐，视频等元素，让我们构建一个网页对别人的依赖减少了，以前想要在网页中添加视频，音乐需要flash的支持。<br>在javascript中加入了 querySelector   querySelectorAll 让我们能直接用类名，ID名获取元素节点。<br>data-XXX属性可以用来存放与该元素节点相关的数据 用elment.dataset.XXX来获取。</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="主要变化"><a href="#主要变化" class="headerlink" title="主要变化"></a>主要变化</h1><blockquote><p>增加了一些语义化的标签，其实就是和普通的div一样，只是让一个网页的结构更加的清晰。<br>增加了音乐，视频等元素，让我们构建一个网页对别人的依赖减少了，以前想要在网页中添加视频，音乐需要flash的支持。<br>在javascript中加入了 querySelector   querySelectorAll 让我们能直接用类名，ID名获取元素节点。<br>data-XXX属性可以用来存放与该元素节点相关的数据 用elment.dataset.XXX来获取。<br>classlist 可以给元素节点添加class类名 elment.classlist.add(‘类名’);</p></blockquote>]]></content>
     
     <summary type="html">
     
