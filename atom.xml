@@ -6,7 +6,7 @@
   <link href="/Blog/atom.xml" rel="self"/>
   
   <link href="http://Tmamasay.githup.io/"/>
-  <updated>2017-10-10T08:42:02.668Z</updated>
+  <updated>2017-10-11T12:50:12.934Z</updated>
   <id>http://Tmamasay.githup.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Object</title>
+    <link href="http://Tmamasay.githup.io/2017/10/11/Object/"/>
+    <id>http://Tmamasay.githup.io/2017/10/11/Object/</id>
+    <published>2017-10-11T12:25:59.000Z</published>
+    <updated>2017-10-11T12:50:12.934Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="面向对象-万物皆对象"><a href="#面向对象-万物皆对象" class="headerlink" title="面向对象=====万物皆对象"></a>面向对象=====万物皆对象</h1><h3 id="对象就是对工具进行分类的管理"><a href="#对象就是对工具进行分类的管理" class="headerlink" title="对象就是对工具进行分类的管理"></a>对象就是对工具进行分类的管理</h3><hr><p>##变量</p><blockquote><p>定义一个变量，在浏览器的解析中其实分两步，先声明变量，就是把声明的变量提到自己作用域的最前面<br>然后才给变量赋值。<br>    ` var a = 10;</p></blockquote><pre><code>(function test() {    console.log(a);    var a = 1;    console.log(a);})();console.log(a);</code></pre><p>//undefind 1 10 `</p><h3 id="变量的搜索机制"><a href="#变量的搜索机制" class="headerlink" title="变量的搜索机制"></a>变量的搜索机制</h3><blockquote><p>在一个独立的作用域中，变量的搜索机制是先搜索局部变量，在<br>搜寻全局变量，还有变量的提升，var a=1；这种在浏览器解析时，会先把变量声明<br>提到前面，在进行赋值，就是两步。</p></blockquote><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><blockquote><p>其实函数就是一个工具<br>封装性：我们只需要了解如何使用工具去实现某个方法，而不需要了解该工具是怎么生成的，这就是函数<br>的封装性</p><h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>工具=函数=方法<br>属性</p><h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><p>就是借物的思想，学会的使用和管理工具。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;面向对象-万物皆对象&quot;&gt;&lt;a href=&quot;#面向对象-万物皆对象&quot; class=&quot;headerlink&quot; title=&quot;面向对象=====万物皆对象&quot;&gt;&lt;/a&gt;面向对象=====万物皆对象&lt;/h1&gt;&lt;h3 id=&quot;对象就是对工具进行分类的管理&quot;&gt;&lt;a href=&quot;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Html5</title>

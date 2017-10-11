@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        Html5 · Huapai
+        Object · Huapai
         
     </title>
     <link rel="icon" href= /assests/favicon.ico>
@@ -81,7 +81,7 @@
                 <a href="/Blog/" >huapaiJ</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Html5</a>
+                <a href="#" class="post-name">Object</a>
             </div>
     </div>
     
@@ -102,7 +102,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Html5
+            Object
             <!-- 404 -->
             
         </h1>
@@ -120,7 +120,7 @@
             
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2017/10/10</span>
+                <span class="post-intro-time">2017/10/11</span>
             </div>
         
     </div>
@@ -128,26 +128,36 @@
         <div class="container">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="主要变化"><a href="#主要变化" class="headerlink" title="主要变化"></a>主要变化</h1><blockquote>
-<p>增加了一些语义化的标签，其实就是和普通的div一样，只是让一个网页的结构更加的清晰。<br>增加了音乐，视频等元素，让我们构建一个网页对别人的依赖减少了，以前想要在网页中添加视频，音乐需要flash的支持。<br>在javascript中加入了 querySelector   querySelectorAll 让我们能直接用类名，ID名获取元素节点。<br>data-XXX属性可以用来存放与该元素节点相关的数据 用elment.dataset.XXX来获取。<br>classlist 可以给元素节点添加class类名 elment.classlist.add(‘类名’);</p>
+        <h1 id="面向对象-万物皆对象"><a href="#面向对象-万物皆对象" class="headerlink" title="面向对象=====万物皆对象"></a>面向对象=====万物皆对象</h1><h3 id="对象就是对工具进行分类的管理"><a href="#对象就是对工具进行分类的管理" class="headerlink" title="对象就是对工具进行分类的管理"></a>对象就是对工具进行分类的管理</h3><hr>
+<p>##变量</p>
+<blockquote>
+<p>定义一个变量，在浏览器的解析中其实分两步，先声明变量，就是把声明的变量提到自己作用域的最前面<br>然后才给变量赋值。<br>    ` var a = 10;</p>
+</blockquote>
+<pre><code>(function test() {
+    console.log(a);
+    var a = 1;
+    console.log(a);
+})();
+console.log(a);
+</code></pre><p>//undefind 1 10 `</p>
+<h3 id="变量的搜索机制"><a href="#变量的搜索机制" class="headerlink" title="变量的搜索机制"></a>变量的搜索机制</h3><blockquote>
+<p>在一个独立的作用域中，变量的搜索机制是先搜索局部变量，在<br>搜寻全局变量，还有变量的提升，var a=1；这种在浏览器解析时，会先把变量声明<br>提到前面，在进行赋值，就是两步。</p>
+</blockquote>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><blockquote>
+<p>其实函数就是一个工具<br>封装性：我们只需要了解如何使用工具去实现某个方法，而不需要了解该工具是怎么生成的，这就是函数<br>的封装性</p>
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>工具=函数=方法<br>属性</p>
+<h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><p>就是借物的思想，学会的使用和管理工具。</p>
 </blockquote>
 
     </article>
     <!-- 前后页  -->
     <ul class="post-pager">
         
-            <li class="next">
-                <a href= "/Blog/2017/10/11/Object/" title= Object >
-                    <span>Next Post</span>
-                    <span>Object</span>
-                </a>
-            </li>
-        
         
             <li class="previous">
-                <a href= "/Blog/2017/10/10/2017-10-10/" title= 2017/10/10 >
+                <a href= "/Blog/2017/10/10/Html5/" title= Html5 >
                     <span>Previous Post</span>
-                    <span>2017/10/10</span>
+                    <span>Html5</span>
                 </a>
             </li>
         
@@ -208,7 +218,7 @@
         <div class="toc-catalog">
             CATALOG
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#主要变化"><span class="toc-number">1.</span> <span class="toc-text">主要变化</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#面向对象-万物皆对象"><span class="toc-number">1.</span> <span class="toc-text">面向对象=====万物皆对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#对象就是对工具进行分类的管理"><span class="toc-number">1.0.1.</span> <span class="toc-text">对象就是对工具进行分类的管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量的搜索机制"><span class="toc-number">1.0.2.</span> <span class="toc-text">变量的搜索机制</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数"><span class="toc-number">1.1.</span> <span class="toc-text">函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对象"><span class="toc-number">1.2.</span> <span class="toc-text">对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象"><span class="toc-number">1.2.1.</span> <span class="toc-text">面向对象</span></a></li></ol></li></ol></li></ol>
     </div>
     
     <div class="back-top">&#xe639;</div>
