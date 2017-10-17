@@ -6,7 +6,7 @@
   <link href="/Blog/atom.xml" rel="self"/>
   
   <link href="http://Tmamasay.githup.io/"/>
-  <updated>2017-10-11T12:52:52.040Z</updated>
+  <updated>2017-10-17T03:52:03.099Z</updated>
   <id>http://Tmamasay.githup.io/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>note</title>
+    <link href="http://Tmamasay.githup.io/2017/10/17/note/"/>
+    <id>http://Tmamasay.githup.io/2017/10/17/note/</id>
+    <published>2017-10-17T02:51:23.000Z</published>
+    <updated>2017-10-17T03:52:03.099Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于一些学习笔记"><a href="#关于一些学习笔记" class="headerlink" title="关于一些学习笔记"></a>关于一些学习笔记</h1><h2 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h2><blockquote><p>判断new出来的实例是不是属于某个构造函数的</p><h2 id="包装属性"><a href="#包装属性" class="headerlink" title="包装属性"></a>包装属性</h2><p> <code>object.defineproperty(this,&#39;属性名&#39;,{get:function () {    对属性名要做的操作},set:function (value) {  对属性值做相关的限制}});</code></p><h2 id="关于定义that变量来保存this"><a href="#关于定义that变量来保存this" class="headerlink" title="关于定义that变量来保存this"></a>关于定义that变量来保存this</h2><p>在一个函数中的this指向不是当前的对象<br>  `<br>function Product() {<br>    this.name = {<br>        name: ‘ss’,<br>        age: ‘18’</p></blockquote><pre><code>};var that = thisfunction aaa() {    console.log(that.name.age);}aaa();</code></pre><p>};<br>// aa();</p><p>Product.prototype = {<br>    aa: function () {<br>        console.log(this.name.name);<br>    }<br>};<br>var ss = new Product();<br>ss.aa();<br>  `</p><h2 id="构造函数就是对象的模板"><a href="#构造函数就是对象的模板" class="headerlink" title="构造函数就是对象的模板"></a>构造函数就是对象的模板</h2><blockquote><p>实例化就是把构造函数中的属性完全拷贝一分 在内存中新开辟一块地址来保存它；</p><h2 id="检测数据类型"><a href="#检测数据类型" class="headerlink" title="检测数据类型"></a>检测数据类型</h2><p>typeof–无法区分数组和json<br>toString.call(‘要检测的数据’) 能够区分数组和json<br>instanceof 判断new 出来的实例是不是属于某个构造函数的<br>constructor 判断某个实例他的构造函数是谁</p><h2 id="定义构造函数是不会分配内存的-实例化才会分配内存"><a href="#定义构造函数是不会分配内存的-实例化才会分配内存" class="headerlink" title="定义构造函数是不会分配内存的 实例化才会分配内存"></a>定义构造函数是不会分配内存的 实例化才会分配内存</h2><h2 id="在后台拿到的是json字符串，要用JSON-parse-String-将字符串转换成json对象"><a href="#在后台拿到的是json字符串，要用JSON-parse-String-将字符串转换成json对象" class="headerlink" title="在后台拿到的是json字符串，要用JSON.parse(String)将字符串转换成json对象"></a>在后台拿到的是json字符串，要用JSON.parse(String)将字符串转换成json对象</h2><h2 id="构造函数就是普通函数组成的"><a href="#构造函数就是普通函数组成的" class="headerlink" title="构造函数就是普通函数组成的"></a>构造函数就是普通函数组成的</h2><p>当一个构造函数中出现了return并且return返回的是一个对象，那么就不会区使用构造函数中自定义的属性了 ，而去使用return返回的数据了</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;关于一些学习笔记&quot;&gt;&lt;a href=&quot;#关于一些学习笔记&quot; class=&quot;headerlink&quot; title=&quot;关于一些学习笔记&quot;&gt;&lt;/a&gt;关于一些学习笔记&lt;/h1&gt;&lt;h2 id=&quot;instanceof&quot;&gt;&lt;a href=&quot;#instanceof&quot; class=&quot;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Object</title>
     <link href="http://Tmamasay.githup.io/2017/10/11/Object/"/>
     <id>http://Tmamasay.githup.io/2017/10/11/Object/</id>
     <published>2017-10-11T12:25:59.000Z</published>
-    <updated>2017-10-11T12:52:52.040Z</updated>
+    <updated>2017-10-17T03:49:57.487Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="面向对象-万物皆对象"><a href="#面向对象-万物皆对象" class="headerlink" title="面向对象=====万物皆对象"></a>面向对象=====万物皆对象</h1><h3 id="对象就是对工具进行分类的管理"><a href="#对象就是对工具进行分类的管理" class="headerlink" title="对象就是对工具进行分类的管理"></a>对象就是对工具进行分类的管理</h3><hr><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>定义一个变量，在浏览器的解析中其实分两步，先声明变量，就是把声明的变量提到自己作用域的最前面<br>然后才给变量赋值。<br>    ` var a = 10;</p></blockquote><pre><code>(function test() {    console.log(a);    var a = 1;    console.log(a);})();console.log(a);</code></pre><p>//undefind 1 10 `</p><h3 id="变量的搜索机制"><a href="#变量的搜索机制" class="headerlink" title="变量的搜索机制"></a>变量的搜索机制</h3><blockquote><p>在一个独立的作用域中，变量的搜索机制是先搜索局部变量，在<br>搜寻全局变量，还有变量的提升，var a=1；这种在浏览器解析时，会先把变量声明<br>提到前面，在进行赋值，就是两步。</p></blockquote><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><blockquote><p>其实函数就是一个工具<br>封装性：我们只需要了解如何使用工具去实现某个方法，而不需要了解该工具是怎么生成的，这就是函数<br>的封装性</p><h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>工具=函数=方法<br>属性</p><h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><p>就是借物的思想，学会的使用和管理工具。</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="面向对象-万物皆对象"><a href="#面向对象-万物皆对象" class="headerlink" title="面向对象=====万物皆对象"></a>面向对象=====万物皆对象</h1><h3 id="对象就是对工具进行分类的管理"><a href="#对象就是对工具进行分类的管理" class="headerlink" title="对象就是对工具进行分类的管理"></a>对象就是对工具进行分类的管理</h3><hr><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>定义一个变量，在浏览器的解析中其实分两步，先声明变量，就是把声明的变量提到自己作用域的最前面<br>然后才给变量赋值。<br>    ` var a = 10;</p></blockquote><pre><code>(function test() {    console.log(a);    var a = 1;    console.log(a);})();console.log(a);</code></pre><p>//undefind 1 10 `</p><h3 id="变量的搜索机制"><a href="#变量的搜索机制" class="headerlink" title="变量的搜索机制"></a>变量的搜索机制</h3><blockquote><p>在一个独立的作用域中，变量的搜索机制是先搜索局部变量，在<br>搜寻全局变量，还有变量的提升，var a=1；这种在浏览器解析时，会先把变量声明<br>提到前面，在进行赋值，就是两步。</p></blockquote><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><blockquote><p>其实函数就是一个工具<br>封装性：我们只需要了解如何使用工具去实现某个方法，而不需要了解该工具是怎么生成的，这就是函数<br>的封装性</p><h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>工具=函数=方法<br>属性</p><h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><p>就是借物的思想，学会的使用和管理工具。</p><h3 id="面向对象的3个作用"><a href="#面向对象的3个作用" class="headerlink" title="面向对象的3个作用"></a>面向对象的3个作用</h3><p>1.面向对象编程–找到产品对象，分析方法，属性（单一职责原则）<br>2.数据描述–json–ajax交互<br>3.框架–解决浏览器兼容问题，封装一些常用的代码，就是多个对象</p><h2 id="对象的字面量形式-json"><a href="#对象的字面量形式-json" class="headerlink" title="对象的字面量形式(json)"></a>对象的字面量形式(json)</h2><p>我们在使用对象的字面量形式（json）时，我们不需要实例化，系统会自动帮我们实例化。</p></blockquote>]]></content>
     
     <summary type="html">
     
